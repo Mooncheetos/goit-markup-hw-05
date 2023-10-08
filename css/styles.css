@@ -770,8 +770,8 @@ opacity: 1;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus +.modal-btn-icon {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
     fill: #ffffff;
 }
 
@@ -851,7 +851,7 @@ opacity: 1;
 }
 
 .tercon-text {
-    display: flex;        
+    /* display: flex;         */
         align-items: center;
     color:#8E8F99;
         font-size: 12px;
