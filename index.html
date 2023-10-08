@@ -395,6 +395,7 @@
         <div class="footer-bottom">
             <p class="footer-bottom-text">Subscribe</p>
             <form class="footer-form">
+                <label aria-label="footer input" class="foot-lab-inp">
                 <input
                 type="email"
                 name="footer-email"
@@ -402,10 +403,11 @@
                 class="footer-form-input"
                 />
                 <button type="submit" class="footer-form-btn">Subscribe
-                    <svg class="link-svg" width="24" height="24">
+                    <svg class="sub-link-svg" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
                 </button>
+                </label>
             </form>
 
         </div>
@@ -415,7 +417,7 @@
     <div class="backdrop">
         <div class="modal">
             <button type="button" class="modal-btn">
-                <svg class="modal-btn-icon" width="24" height="24">
+                <svg class="modal-btn-icon" width="8" height="8">
                     <use href="./images/modicon.svg#icon-close"></use>
                 </svg>
             </button>
@@ -425,7 +427,7 @@
                 <label for="user-name" class="modal-label">Name</label>
                 <div class="input-wrap">
                     <input type="text" name="user-name" class="modal-input" required id="user-name" />
-                    <svg class="modal-icon" width="18" height="18">
+                    <svg class="modal-icon" width="18" height="24">
                         <use href="./images/modicon.svg#icon-person-black"></use>
                     </svg>
                 </div>            
@@ -434,7 +436,7 @@
             <label for="user-phone" class="modal-label">Phone</label>
             <div class="input-wrap">
                 <input type="tel" name="user-phone" class="modal-input" required id="user-phone" />
-                <svg class="modal-icon" width="18" height="18">
+                <svg class="modal-icon" width="18" height="24">
                     <use href="./images/modicon.svg#icon-phone-black"></use>
                 </svg>
             </div>            
@@ -443,30 +445,30 @@
             <label for="user-email" class="modal-label">Email</label>
             <div class="input-wrap">
                 <input type="email" name="user-email" class="modal-input" required id="user-email" />
-                <svg class="modal-icon" width="18" height="18">
+                <svg class="modal-icon" width="18" height="24">
                     <use href="./images/modicon.svg#icon-email-black"></use>
                 </svg>
             </div>
             </div>
-            <div class="modal-field">
-                <label for="user-text" class="modal-label">Comment</label>
+            <div class="modal-field-lab">
+                <label for="user-comment" class="modal-label">Comment</label>
                 <textarea 
-                name="user-text" 
-                id="user-text" 
+                name="user-comment" 
+                id="user-comment" 
                 class="modal-texar"
                 placeholder="Text input"                
                 ></textarea>
             </div>
-            <div class="modal-field">
-                <input class="modal-check visually-hidden" type="checkbox" name="condi" id="condi" required>
-                <label class="tercon-text" for="condi"
+            <div class="modal-field-check">
+                <input class="modal-check visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required>
+                <label class="tercon-text" for="user-privacy"
                 ><span class="tercon-text-box">
-                    <svg class="tercon-text-icon" width="10" height="10">
+                    <svg class="tercon-text-icon" width="10" height="8">
                         <use href="./images/icons.svg#icon-checkmark"
                         ></use>
                     </svg>
                 </span>I accept the terms and conditions of the 
-                    <a href=""> Privacy Policy</a></label>
+                    <a href="" class="tercon-text-link"> Privacy Policy</a></label>
             </div>
             <button type="submit" class="modal-form-but">Send</button>
             </form>
